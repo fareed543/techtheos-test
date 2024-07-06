@@ -3,10 +3,10 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-
 .custom-select  {
     /* border: 1px solid blue; */
     border-radius: 5px;
+    color: blue;
     
     /* Blue thin border */
   }

@@ -3,8 +3,8 @@
   <div class="row mt-4">
     <div class="col-md-4">
       <mat-form-field class="w-100 custom-select">
-        <mat-select [formControl]="singleSelect" [(ngModel)]="singleSelectList">
-          <mat-select-trigger>
+        <mat-select placeholder="Accounts" [formControl]="singleSelect" [(ngModel)]="singleSelectList">
+          <mat-select-trigger class="blue-label">
             Accounts
           </mat-select-trigger>
           <mat-option *ngFor="let topping of toppingList" [value]="topping">
@@ -28,8 +28,8 @@
   <div class="row mt-4">
     <div class="col-md-4">
       <mat-form-field class="w-100 custom-select">
-        <mat-select [formControl]="multiSelect" multiple [(ngModel)]="multiSelectList" > 
-          <mat-select-trigger>
+        <mat-select placeholder="Small C" [formControl]="multiSelect" multiple [(ngModel)]="multiSelectList" > 
+          <mat-select-trigger class="blue-label">
             Small C
           </mat-select-trigger>
           <mat-option *ngFor="let topping of toppingList" [value]="topping">{{ topping }}</mat-option>

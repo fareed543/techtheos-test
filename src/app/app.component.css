@@ -6,7 +6,7 @@
 }
 
 .selected-option {
-  font-weight: bold;
+  font-weight: 200;
   color: #7d7d7d;
   display: inline-flex;
   margin-right: 0.5rem;
@@ -49,5 +49,7 @@
 }
 
 
-
+.blue-label {
+  color: blue;
+}
 
