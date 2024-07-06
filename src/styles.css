@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.custom-select  {
+    /* border: 1px solid blue; */
+    border-radius: 5px;
+    
+    /* Blue thin border */
+  }
+  
+  .custom-select .mdc-text-field{
+    background-color: transparent;
+    border: 1px solid blue;
+    border-radius: 5px;
+  }
+  
+  .custom-select .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: transparent;
+  }
+
+  .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple{
+    /* border-bottom-color : transparent */
+    /* border : 0; */
+    display: none;
+
+  }

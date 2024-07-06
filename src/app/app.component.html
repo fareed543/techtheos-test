@@ -1,0 +1,51 @@
+<div class="container mt-4">
+  <h3>Mat Single & Multli Select Controls</h3>
+  <div class="row mt-4">
+    <div class="col-md-4">
+      <mat-form-field class="w-100 custom-select">
+        <mat-select [formControl]="singleSelect" [(ngModel)]="singleSelectList">
+          <mat-select-trigger>
+            Accounts
+          </mat-select-trigger>
+          <mat-option *ngFor="let topping of toppingList" [value]="topping">
+            {{ topping }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="col-md-8">
+      <div class="selected-options">
+        <div *ngIf="singleSelectList" class="selected-option">
+          {{ singleSelectList }}
+          <div class="remove" (click)="deleteSingle()">
+              <span>X</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-md-4">
+      <mat-form-field class="w-100 custom-select">
+        <mat-select [formControl]="multiSelect" multiple [(ngModel)]="multiSelectList" > 
+          <mat-select-trigger>
+            Small C
+          </mat-select-trigger>
+          <mat-option *ngFor="let topping of toppingList" [value]="topping">{{ topping }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="col-md-8">
+      <div class="selected-options">
+        <div *ngFor="let option of multiSelectList" class="selected-option">
+            {{ option }}
+          <div class="remove" (click)="deleteMultiple(option)">
+              <span>X</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
